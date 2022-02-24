@@ -47,6 +47,7 @@
     <script>
         const items = document.querySelectorAll('[wm-dropzone] .item')
         items.forEach((item, index) => {
+            item.style.cursor = 'move'
             item.draggable = true
             item.id = item.id || `draggable-item-${index}`
             item.ondragstart = e =>
